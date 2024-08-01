@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+body{
+    background-color: rgb(97, 58, 13);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', 'sans-serif';
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: aliceblue;
+    align-items: center;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 65vh;
+    background-color: black;
+    color: white;
+    font-family: 'valera-round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 12px;
+    padding: 15px;
+    background-image: url('images/bgWallper.jpg');
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom{
+    position: sticky;
+    height: 80px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 9px;
+}
+#MyProgressBar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+.songItem{
+    height: 35px;
+    display: flex;
+    background-color: rgb(129, 117, 117);
+    width: 50%;
+    color: black;
+    margin: 12px 0;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.songItem img{
+    width: 43px;
+    border-radius: 34px;
+}
+.timeStamp{
+    margin: 0 23px;
+}
+.timeStamp i{
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 30px;
+}
+
+#songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+    margin-top: 20px;
+    display: flex;
+}
+
+#songInfo img{
+    opacity: 0;
+    transition: opacity is 0.4s ease-in;
+}
